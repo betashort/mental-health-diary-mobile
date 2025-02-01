@@ -1,0 +1,9 @@
+version: '3'
+services:
+  node:
+    build: ./docker
+    ports:
+      - "8081:8081"
+    volumes:
+      - ".:/projects"
+    tty: true
